@@ -5,7 +5,6 @@
 
 This repository contains the COMSOL Multiphysics® model file accompanying:
 
-> An, Mangnike, Hyde, Laibinis, Locke, and Weiss.
 > **Tuning Incubation Time and Flow Dynamics in a Paper-Based Porous
 > Silicon Biosensor for Enhanced Sensitivity.**
 > *Lab on a Chip*, 2026. DOI: [insert when assigned]
@@ -23,8 +22,7 @@ pressure once the droplet is fully imbibed.
 .
 ├── README.md                          ← you are here
 ├── LICENSE                            ← CC-BY 4.0
-└── model/
-    └── PSi_paper_imbibition.mph       ← COMSOL model file (solutions cleared)
+└── PSi_paper_imbibition.mph       ← COMSOL model file (solutions cleared)
 ```
 
 The model file ships with **all solutions cleared** so that users
@@ -37,7 +35,7 @@ on disk; clear solutions before committing changes back.
 
 | Component | Version |
 |---|---|
-| COMSOL Multiphysics® | 6.1 or later (developed in 6.1) |
+| COMSOL Multiphysics® | 6.1 (developed in 6.1) |
 | Subsurface Flow Module | required (Richards' Equation interface) |
 
 The model was developed and tested on COMSOL 6.1. It should open and
@@ -99,14 +97,6 @@ The legacy time-based BC `Pressure 2` (which uses the parameter `t_inc`)
 is present in the model tree but disabled — it is overridden by
 `Pressure 1` and retained only for diagnostic comparison.
 
-## Repository vs. archive
-
-- **GitHub repo** (this URL): development history, issue tracker.
-  Updated on a rolling basis.
-- **Zenodo archive**: frozen snapshots tied to specific paper versions,
-  each with its own DOI. **Cite the version DOI corresponding to the
-  published paper, not this repository's URL,** when citing in academic
-  work.
 
 ## Known limitations
 
@@ -129,31 +119,7 @@ formulation, and includes several modeling choices documented in
 
 ## How to cite
 
-Please cite **both** the paper and the Zenodo archive:
-
-```bibtex
-@article{An2026PSiPaper,
-  author  = {An, Nurshat and Mangnike, [first] and Hyde, [first] and
-             Laibinis, Paul E. and Locke, [first] and Weiss, Sharon M.},
-  title   = {Tuning Incubation Time and Flow Dynamics in a Paper-Based
-             Porous Silicon Biosensor for Enhanced Sensitivity},
-  journal = {Lab on a Chip},
-  year    = {2026},
-  doi     = {[insert when assigned]}
-}
-
-@software{An2026PSiPaperCOMSOL,
-  author    = {An, Nurshat and Mangnike, [first] and Hyde, [first] and
-               Laibinis, Paul E. and Locke, [first] and Weiss, Sharon M.},
-  title     = {COMSOL model: capillary imbibition in PSi--paper hybrid
-               microfluidic devices},
-  year      = {2026},
-  publisher = {Zenodo},
-  version   = {v1.0.0},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://github.com/Nurshat317/psi-paper-imbibition-comsol}
-}
-```
+Please cite **both** the paper:
 
 ## License
 
